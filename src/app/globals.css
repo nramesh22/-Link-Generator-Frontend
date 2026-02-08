@@ -464,6 +464,61 @@ button.dash-link {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 900px) {
+  .dashboard-shell,
+  .add-shell {
+    padding: 1.5rem;
+  }
+
+  .dash-top,
+  .add-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dash-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-shell {
+    padding: 1.5rem;
+  }
+
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .logo-box,
+  .dash-logo {
+    padding: 0.6rem 1.6rem;
+  }
+
+  .app-logo {
+    height: 28px;
+  }
+
+  .dash-button,
+  .blue-button,
+  .copy-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .add-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
 @keyframes rise {
   from {
     opacity: 0;
