@@ -148,16 +148,16 @@ export default function DashboardPage() {
                     <tbody>
                         {rows.map((row) => (
                             <tr key={row.id}>
-                                <td>{row.id}</td>
-                                <td>{row.type}</td>
-                                <td>{row.first_name ?? "-"}</td>
-                                <td>{row.last_name ?? "-"}</td>
-                                <td>{row.phone ?? "-"}</td>
-                                <td>{row.mobile ?? "-"}</td>
-                                <td>{row.email ?? "-"}</td>
-                                <td>{row.company ?? "-"}</td>
-                                <td>{row.title ?? "-"}</td>
-                                <td>
+                                <td data-label="ID">{row.id}</td>
+                                <td data-label="Type">{row.type}</td>
+                                <td data-label="F. Name">{row.first_name ?? "-"}</td>
+                                <td data-label="L. Name">{row.last_name ?? "-"}</td>
+                                <td data-label="Phone">{row.phone ?? "-"}</td>
+                                <td data-label="Mobile">{row.mobile ?? "-"}</td>
+                                <td data-label="Email">{row.email ?? "-"}</td>
+                                <td data-label="Company">{row.company ?? "-"}</td>
+                                <td data-label="Title">{row.title ?? "-"}</td>
+                                <td data-label="Website">
                                     {row.website ? (
                                         <a className="dash-link" href={row.website}>
                                             {row.website}
@@ -166,9 +166,9 @@ export default function DashboardPage() {
                                         "-"
                                     )}
                                 </td>
-                                <td>{row.pdf_name ?? "-"}</td>
-                                <td>{row.url_name ?? "-"}</td>
-                                <td className="dash-actions-col">
+                                <td data-label="PDF">{row.pdf_name ?? "-"}</td>
+                                <td data-label="URL">{row.url_name ?? "-"}</td>
+                                <td className="dash-actions-col" data-label="Actions">
                                     <a className="dash-link" href={getEditHref(row)}>
                                         Edit
                                     </a>
@@ -187,12 +187,16 @@ export default function DashboardPage() {
                         ))}
                         {rows.length === 0 && !error && (
                             <tr>
-                                <td colSpan={13}>No links yet.</td>
+                                <td className="dash-empty" colSpan={13} data-label="Status">
+                                    No links yet.
+                                </td>
                             </tr>
                         )}
                         {error && (
                             <tr>
-                                <td colSpan={13}>{error}</td>
+                                <td className="dash-empty" colSpan={13} data-label="Status">
+                                    {error}
+                                </td>
                             </tr>
                         )}
                     </tbody>

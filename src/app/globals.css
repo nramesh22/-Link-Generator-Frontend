@@ -513,9 +513,59 @@ button.dash-link {
   }
 
   .dash-table {
+    border: none;
+    background: transparent;
+  }
+
+  .dash-table thead {
+    display: none;
+  }
+
+  .dash-table,
+  .dash-table tbody,
+  .dash-table tr,
+  .dash-table td {
     display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+    width: 100%;
+  }
+
+  .dash-table tr {
+    border: 2px solid #1f6aa5;
+    border-radius: 16px;
+    background: #fff;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .dash-table td {
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0.7rem 0.9rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .dash-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #0f5b78;
+    flex: 0 0 40%;
+  }
+
+  .dash-table td:last-child {
+    border-bottom: none;
+  }
+
+  .dash-actions-col {
+    align-items: flex-start;
+  }
+
+  .dash-empty {
+    display: block;
+    text-align: center;
+  }
   }
 }
 
