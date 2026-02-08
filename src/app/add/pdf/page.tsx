@@ -79,7 +79,9 @@ export default function AddPdfPage() {
     return (
         <main className="add-shell fade-in">
             <header className="add-header">
-                <div className="dash-logo">LOGO</div>
+                <div className="dash-logo">
+                    <img className="app-logo" src="/logo.svg" alt="Link Generator logo" />
+                </div>
                 <div style={{ display: "flex", gap: "0.75rem" }}>
                     <a className="dash-button" href="/dashboard">
                         BACK TO DASHBOARD

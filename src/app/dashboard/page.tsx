@@ -87,7 +87,9 @@ export default function DashboardPage() {
     return (
         <main className="dashboard-shell fade-in">
             <header className="dash-top">
-                <div className="dash-logo">LOGO</div>
+                <div className="dash-logo">
+                    <img className="app-logo" src="/logo.svg" alt="Link Generator logo" />
+                </div>
                 <div className="dash-actions">
                     <div className="dash-menu-wrap">
                         <button

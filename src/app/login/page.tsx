@@ -85,7 +85,9 @@ export default function LoginPage() {
     return (
         <main className="login-shell fade-in">
             <div className="login-stack">
-                <div className="logo-box">LOGO</div>
+                <div className="logo-box">
+                    <img className="app-logo" src="/logo.svg" alt="Link Generator logo" />
+                </div>
 
                 <div className="login-card">
                     <div className="login-title">LOGIN</div>

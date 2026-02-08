@@ -199,6 +199,15 @@ a {
   padding: 0.8rem 3.5rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-logo {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .login-card {
@@ -263,6 +272,9 @@ a {
   padding: 0.8rem 2.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dash-actions {
