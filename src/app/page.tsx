@@ -15,7 +15,7 @@ export default function Home() {
     <main className="dashboard-shell fade-in">
       <header className="dash-top">
         <div className="dash-logo">
-          <img className="app-logo" src="/logo.svg" alt="Link Generator logo" />
+          <img className="app-logo" src="/mylogo.png" alt="Link Generator logo" />
         </div>
       </header>
     </main>
